@@ -6,6 +6,7 @@ import {
   useSearchParams,
   useSubmit,
 } from "@remix-run/react";
+import * as Components from "packages/components";
 import type { KeyboardEvent } from "react";
 import React from "react";
 import CountUp from "react-countup";
@@ -255,6 +256,8 @@ export default function Index() {
   ///* Verlauf (weiß) */
   //background: linear-gradient(358.45deg, #FFFFFF 12.78%, rgba(255, 255, 255, 0.4) 74.48%, rgba(255, 255, 255, 0.4) 98.12%);
 
+  console.log(Components);
+
   return (
     <>
       <section className="-mt-8 bg-lilac-50">
@@ -291,6 +294,7 @@ export default function Index() {
             <div className="md:grid md:grid-cols-12 md:gap-6 lg:gap-8">
               <div className="md:col-start-1 md:col-span-7 xl:col-start-2 xl:col-span-5 md:flex md:items-center">
                 <div>
+                  <Components.Test />
                   <H1 className="text-center sm:text-left leading-none">
                     Willkommen in Deiner MINT-Community
                   </H1>
